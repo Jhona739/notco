@@ -1,0 +1,124 @@
+@import url("header.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.section__row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+.section form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    padding: 20px;
+}
+.section form .div1{
+    width: 50%;
+}
+.section form div input, select{
+    width: 90%;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #000;
+    color: #0f1ec1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section form div label{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.boton{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #0f1ec1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media only screen and (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        background-image: url("https://cdn2.notco.com/uploads/content-imgs/_2200x1200_fit_center-center_95_none/home_notmilk.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu.active{
+        clip-path: circle(150% at 50.3% 100%);
+    }
+    nav{
+        width: 100%;
+        height: 60%;
+        opacity: 0.8;
+        justify-content: center;
+    }
+    .item__enlace{
+        font-size: 1rem;
+    }
+    .lista__item span{
+        font-size: 1rem;
+    }
+    .menu__container-imagen{
+        width: 100%;
+        height: 20%;
+    }
+    .content__img{
+        width: 200px;
+        height: 60%;
+        display: none;
+    }
+    .container__productos-imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .footer__izquierda, .footer__derecha{
+        width: 100%;
+    }
+    .footer__derecha{
+        align-items: start;
+    }
+    .footer__izquierda h2{
+        font-size: 1.5rem;
+    }
+    .footer__izquierda p a{
+        font-size: 1rem;
+    }
+    .izquierda__redes a span{
+        font-size: 1rem;
+    }
+    .section form .div1{
+        width: 100%;
+    }
+}

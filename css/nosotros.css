@@ -1,0 +1,135 @@
+@import url("header.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+html{
+    font-size: 15px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.section__container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+}
+.section__container-primera{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+}
+.section__pregunta-giuseppe,.section__que-es-giuseppe{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 20px;
+     width: 50%;
+     font-family: 'Hind', sans-serif;
+}
+.section__pregunta-giuseppe p{
+    width: 50%;
+    font-family: 'Hind', sans-serif;
+}
+.section__pregunta-giuseppe h1{
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container-primera__primera-notmilk{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 20px;
+}
+.container-primera__primera-notmilk h2{
+    font-size: 4rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container-primera__primera-notmilk p{
+    width: 50%;
+    font-family: 'Hind', sans-serif;
+}
+.container__imagen{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+}
+.imagen__vaca{
+    width: 100%;
+}
+@media only screen and (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        background-image: url("https://cdn2.notco.com/uploads/content-imgs/_2200x1200_fit_center-center_95_none/home_notmilk.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu.active{
+        clip-path: circle(150% at 50.3% 100%);
+    }
+    nav{
+        width: 100%;
+        height: 60%;
+        opacity: 0.8;
+        justify-content: center;
+    }
+    .item__enlace{
+        font-size: 1rem;
+    }
+    .lista__item span{
+        font-size: 1rem;
+    }
+    .menu__container-imagen{
+        width: 100%;
+        height: 20%;
+    }
+    .content__img{
+        width: 200px;
+        height: 60%;
+        display: none;
+    }
+    .footer__izquierda, .footer__derecha{
+        width: 100%;
+    }
+    .footer__derecha{
+        align-items: start;
+    }
+    .footer__izquierda h2{
+        font-size: 1.5rem;
+    }
+    .footer__izquierda p a{
+        font-size: 1rem;
+    }
+    .izquierda__redes a span{
+        font-size: 1rem;
+    }
+    .section__pregunta-giuseppe{
+        width: 100%;
+    }
+    .section__que-es-giuseppe{
+        width: 100%;
+    }
+    .container-primera__primera-notmilk{
+        width: 100%;
+    }
+    .container__imagen{
+        transform: translateX(100px) scale(1.1);
+        -webkit-transform: translateX(100px) scale(1.1);
+        -moz-transform: translateX(100px) scale(1.1);
+        -ms-transform: translateX(100px) scale(1.1);
+        -o-transform: translateX(100px) scale(1.1);
+}
+}

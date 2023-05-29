@@ -1,0 +1,338 @@
+@import url("header.css");
+@import url("footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+.section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header__fondo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    background-image: url("../img/banner_notco.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+}
+.fondo__perfil{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    height: 800px;
+}
+.perfil__titulo{
+    font-size: 10em;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.perfil__titulo .linea{
+    display: block;
+    border-right: 4px solid;
+    width: 7ch;
+    animation: typing 2s steps(7),    blink .5s infinite step-end alternate;
+    overflow: hidden;
+    -webkit-animation: typing 2s steps(7),    blink .5s infinite step-end alternate;
+}
+@keyframes typing{
+    from{width: 0;}
+}
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+.perfil__parrafo{
+    width: 80%;
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Hind', sans-serif;
+}
+.perfil__container-botones{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container-botones__enlace{
+    font-size: 1.8em;
+    width: 40%;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #23222273;
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container-botones__enlace span{
+    position: absolute;
+    background-color: #fff;
+}
+.container-botones__enlace span:nth-child(1){
+    width: 100%;
+    height: 2px;
+    top: 0;
+    left: -100%;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace span:nth-child(2){
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    right: -100%;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace span:nth-child(3){
+    width: 2px;
+    height: 100%;
+    bottom: -100px;
+    left: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace span:nth-child(4){
+    width: 2px;
+    height: 100%;
+    top: -100px;
+    right: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.container-botones__enlace:hover span:nth-child(1){
+    left: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace:hover span:nth-child(2){
+    right: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace:hover span:nth-child(3){
+    bottom: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.container-botones__enlace:hover span:nth-child(4){
+    top: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+.section__separador{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    align-items: center;
+    height: 500px;
+    background-image: url("../img/productos__notco.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section__card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card__container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    overflow: hidden;
+}
+.card__container::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #0f1ec1;
+    width: 100%;
+    height: 80%;
+    transform: translateY(80%);
+    -webkit-transform: translateY(80%);
+    -moz-transform: translateY(80%);
+    -ms-transform: translateY(80%);
+    -o-transform: translateY(80%);
+    transition: .3s ease all;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    -ms-transition: .3s ease all;
+    -o-transition: .3s ease all;
+    z-index: -1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.card__container:hover::after{
+     transform: translateY(0);
+     -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+     -ms-transform: translateY(0);
+     -o-transform: translateY(0);
+     transition: .3s ease all;
+     -webkit-transition: .3s ease all;
+     -moz-transition: .3s ease all;
+     -ms-transition: .3s ease all;
+     -o-transition: .3s ease all;
+}
+.container__productos-imagen{
+    width: 225px;
+    height: 225px;
+}
+.card__productos-boton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.productos-boton__enlace{
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 20px;
+    background-color:#FF8B01;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@media only screen and (max-width: 800px) {
+    html{
+        font-size: 12px;
+    }
+    .menu{
+        background-image: url("https://cdn2.notco.com/uploads/content-imgs/_2200x1200_fit_center-center_95_none/home_notmilk.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menu.active{
+        clip-path: circle(150% at 50.3% 100%);
+    }
+    nav{
+        width: 100%;
+        height: 60%;
+        opacity: 0.8;
+        justify-content: center;
+    }
+    .item__enlace{
+        font-size: 1rem;
+    }
+    .lista__item span{
+        font-size: 1rem;
+    }
+    .menu__container-imagen{
+        width: 100%;
+        height: 20%;
+    }
+    .content__img{
+        width: 200px;
+        height: 60%;
+        display: none;
+    }
+    .fondo__perfil{
+        width: 100%;
+        height: 500px;
+    }
+    .perfil__titulo{
+        font-size: 5rem;
+    }
+    .perfil__parrafo{
+        font-size: 1rem;
+    }
+    .container-botones__enlace{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .section__separador{
+        width: 100%;
+    }
+    .container__productos-imagen{
+        width: 100%;
+        height: 100%;
+    }
+    .footer__izquierda, .footer__derecha{
+        width: 100%;
+    }
+    .footer__derecha{
+        align-items: start;
+    }
+    .footer__izquierda h2{
+        font-size: 1.5rem;
+    }
+    .footer__izquierda p a{
+        font-size: 1rem;
+    }
+    .izquierda__redes a span{
+        font-size: 1rem;
+    }
+}
